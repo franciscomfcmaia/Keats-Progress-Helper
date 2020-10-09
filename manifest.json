@@ -1,0 +1,50 @@
+{
+  "name": "Keats Progress",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Test",
+  "homepage_url": "https://github.com/franciscomfcmaia",
+  "icons": {
+    "128": "icons/icon.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "src/bg/background.js"
+    ],
+    "persistent": true
+  },
+  "options_page": "src/options_custom/index.html",
+  "browser_action": {
+    "default_icon": "icons/icon.png",
+    "default_title": "Keats Progress Helper"
+  },
+  "permissions": [
+    "contentSettings",
+    "https://keats.kcl.ac.uk/*",
+    "storage",
+    "tabs"
+  ],
+  "web_accessible_resources": [
+    "progress.json"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://keats.kcl.ac.uk/*"
+      ],
+      "css": [
+        "src/inject/inject.css"
+      ]
+    },
+    {
+      "matches": [
+        "https://keats.kcl.ac.uk/*"
+      ],
+      "js": [
+        "src/inject/inject.js",
+        "js/jquery/jquery.min.js"
+      ]
+    }
+  ]
+}
