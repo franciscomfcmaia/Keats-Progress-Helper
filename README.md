@@ -9,6 +9,18 @@ This extension simply parses them and saves the progress of each completed task 
 
 Please feel free to start an issue if one is found. Below is a cheat sheet on how to report a bug.
 
+## Installation
+
+Releases can be found here : https://github.com/franciscomfcmaia/Keats-Progress-Helper/releases
+
+Because this extensions is not yet on the chrome store (might take some days). Follow these instructions :
+
+1.  Download a release and unzip to a place of your choice.
+2.  Visit  `chrome://extensions`  (via omnibox or menu -> Tools -> Extensions).
+3.  Enable Developer mode by ticking the checkbox in the upper-right corner.
+4.  Click on the "Load unpacked extension..." button.
+5.  Select the directory containing your  **unpacked**  released.
+
 ## Changelog 0.1 [Staging]
 
 |Functionality| Status   | Comments |
