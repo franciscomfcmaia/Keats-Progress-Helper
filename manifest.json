@@ -23,7 +23,8 @@
     "contentSettings",
     "https://keats.kcl.ac.uk/*",
     "storage",
-    "tabs"
+    "tabs",
+    "contextMenus"
   ],
   "web_accessible_resources": [
     "progress.json"
